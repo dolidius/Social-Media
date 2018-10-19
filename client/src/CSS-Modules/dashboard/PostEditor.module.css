@@ -1,0 +1,45 @@
+.postEditor{
+    position: relative;
+}
+
+.postInput{
+    resize: none;
+    padding: 2rem;
+    font-size: 2.4rem;
+    font-family: 'K2D';
+    height: 26rem;
+    width: 75rem;
+    border: none;
+    box-shadow: 0 2rem 4rem rgba(0,0,0,0.15);
+    outline: none;
+}
+
+.postButton{
+    position: absolute;
+    border: none;
+    background: #49CB34;
+    width: 100%;
+    padding: 1.5rem;
+    font-family: 'K2D';
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+@media(max-width: 800px){
+    .postInput{
+        width: 60rem;
+    }
+}
+
+@media(max-width: 550px){
+    .postInput{
+        width: 45rem;
+    }
+}
+
+@media(max-width: 400px){
+    .postInput{
+        width: 40rem;
+    }
+}

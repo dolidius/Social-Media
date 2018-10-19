@@ -1,0 +1,97 @@
+.container{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'K2D';
+}
+
+.formBox{
+    width: 50%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+    padding: 2.4rem 0;
+}
+
+.title{
+    font-size: 3rem;
+    letter-spacing: 3px;
+    padding-bottom: .5rem;
+}
+
+.formGroup{
+    position: relative;
+}
+
+.label{
+    position: absolute;
+    bottom: -2px;
+    left: 5%;
+    font-size: 1.2rem;
+    transition: all .3s;
+}
+
+.input{
+    width: 40rem;
+    font-size: 1.8rem;
+    padding: 1rem;
+    margin: 1.5rem;
+    font-family: inherit;
+    border: 1px solid grey;
+}
+
+.input:placeholder-shown ~ .label{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-3rem);
+}
+
+.button{
+    width: 40rem;
+    margin: 1.3rem;
+    border: none;
+    padding: 1.5rem;
+    font-family: inherit;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    background-color: #51E426;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover{
+    transform: translateY(-1.5px);
+    box-shadow: 0 2rem 4rem rgba(0,0,0,0.15);
+}
+
+.button:active{
+    transform: translateY(0);
+    box-shadow: 0 1.5rem 3rem rgba(0,0,0,0.1);
+}
+
+@media(max-width: 760px){
+    .formBox{
+        width: 65%;
+    }
+}
+
+@media(max-width: 490px){
+    .formBox{
+        width: 88%;
+    }
+}
+
+@media(max-width: 400px){
+    .input, .button{
+        width: 35rem;
+    }
+}
+
+@media(max-width: 320px){
+    .input, .button{
+        width: 30rem;
+    }
+}

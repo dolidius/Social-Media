@@ -1,0 +1,139 @@
+.box{
+    width: 75rem;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 47%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 0 4rem 8rem rgba(0,0,0,0.3);
+}
+
+.arrow{
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+}
+
+.arrow a{
+    font-size: 3rem;
+    color: black;
+    text-decoration: none;
+}
+
+.title{
+    text-align: center;
+    padding: 1rem;
+    font-size: 5rem;
+    font-family: 'K2D';
+    letter-spacing: 1rem;
+}
+
+.registerForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.formGroup{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.error{
+    position: absolute;
+    left: 20%;
+    top: 86%;
+    color: red;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.input, .button{
+    width: 60%;
+}
+
+.input{
+    border: 1px solid black;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 4px;
+    outline: none;
+}
+
+.button{
+    border: none;
+    margin-top: 1rem;
+    background: #9F1212;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all .5s;
+    font-family: inherit;
+    font-size: 1.6rem;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.15);
+    transition: all .3s;
+}
+
+.button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 2rem 4rem rgba(0,0,0,0.2);
+}
+
+.button:active{
+    transform: translateY(0);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+}
+
+.links{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottomLink{
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+@media(max-width: 560px){
+    .box{
+        width: 60rem;
+    }
+}
+
+@media(max-width: 460px){
+    .box{
+        width: 48rem;
+    }
+
+    .input, .button{
+        width: 75%;
+    }
+
+}
+
+@media(max-width: 370px){
+    .box{
+        width: 40rem;
+    }
+
+    .title{
+        font-size: 4rem;
+    }
+
+    .input, .button{
+        width: 80%;
+    }
+
+}

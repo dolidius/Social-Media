@@ -1,0 +1,36 @@
+.centerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.postCreator{
+    margin-top: 8rem;
+}
+
+.postsContainer{
+    width: 75rem;
+}
+
+.postContainer{
+    margin-top: 3rem;
+}
+
+@media(max-width: 800px){
+    .postsContainer{
+        width: 60rem;
+    }
+}
+
+@media(max-width: 550px){
+    .postsContainer{
+        width: 45rem;
+    }
+}
+
+@media(max-width: 400px){
+    .postsContainer{
+        width: 40rem;
+    }
+}
